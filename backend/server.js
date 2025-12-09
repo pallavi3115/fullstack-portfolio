@@ -29,7 +29,8 @@ if (!fs.existsSync(uploadsDir)) {
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000'], // Frontend URL
+  origin: ['http://localhost:3000',
+    'https://bussiness-portfolio-crm-2ea11d.netlify.app' ], // Frontend URL
   credentials: true
 }));
 app.use(express.json());
